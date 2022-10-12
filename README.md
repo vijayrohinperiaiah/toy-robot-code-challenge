@@ -15,7 +15,7 @@ pip install -r requirements.txt
 `setup.py` is the build tool for Python.
 
 ```bash
-python setup.py test # Run all the corresponding units
+python setup.py test # Run all the corresponding unit test
 ```
 
 To run toyrobot commandline program, run the `main.py` file
@@ -83,3 +83,5 @@ where PLACE command has three parameters x_position, y_position and Direction (N
 #### Assumptions
 - *Python 3.7 or above* is already available in the end user system.
 - A new command has been introduced *EXIT* - To quit the toyrobot execution, and it is recognized as `EXIT`
+
+![Sample Execution](sample_screenshot.PNG?raw=true "Sample Testcases Screenshot")
