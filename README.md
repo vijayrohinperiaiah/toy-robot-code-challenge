@@ -16,7 +16,6 @@ pip install -r requirements.txt
 
 ```bash
 python setup.py test # Run all the corresponding units
-python setup.py lint # Run Linting
 ```
 
 To run toyrobot commandline program, run the `main.py` file
