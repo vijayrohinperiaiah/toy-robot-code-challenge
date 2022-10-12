@@ -4,7 +4,7 @@ class Coordinates:
 
     def __init__(self, x_pos: int, y_pos: int):
         self.x_position = self.__check_steps_valdity(x_pos)
-        self.x_position = self.__check_steps_valdity(y_pos)
+        self.y_position = self.__check_steps_valdity(y_pos)
 
     @classmethod
     def __check_steps_valdity(cls, x_pos_or_y_pos: int) -> int:

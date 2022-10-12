@@ -21,6 +21,10 @@ class _North(Directions):
     def left() -> 'Directions':
         return Directions.WEST
 
+    @staticmethod
+    def right() -> 'Directions':
+        return Directions.EAST
+
     @classmethod
     def coordinates_movement(cls, coordinates: Coordinates) -> Coordinates:
         return coordinates.stepup_y_position()
@@ -30,6 +34,10 @@ class _South(Directions):
     @staticmethod
     def left() -> 'Directions':
         return Directions.EAST
+
+    @staticmethod
+    def right() -> 'Directions':
+        return Directions.WEST
 
     @classmethod
     def coordinates_movement(cls, coordinates: Coordinates) -> Coordinates:
@@ -41,6 +49,10 @@ class _East(Directions):
     def left() -> 'Directions':
         return Directions.NORTH
 
+    @staticmethod
+    def right() -> 'Directions':
+        return Directions.SOUTH
+
     @classmethod
     def coordinates_movement(cls, coordinates: Coordinates) -> Coordinates:
         return coordinates.stepup_x_position()
@@ -50,6 +62,10 @@ class _West(Directions):
     @staticmethod
     def left() -> 'Directions':
         return Directions.SOUTH
+
+    @staticmethod
+    def right() -> 'Directions':
+        return Directions.NORTH
 
     @classmethod
     def coordinates_movement(cls, coordinates: Coordinates) -> Coordinates:
